@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          XML
-%define         _subclass       XSLT
+%define		_class		XML
+%define		_subclass	XSLT
 %define		_pearname	%{_class}_%{_subclass}_Wrapper
-%define		_status		alpha
+
 Summary:	%{_pearname} - single interface to the different XSLT interface or commands
 Summary(pl):	%{_pearname} - jeden interfejs do ró¿nych interfejsów i komend XSLT
 Name:		php-pear-%{_pearname}
