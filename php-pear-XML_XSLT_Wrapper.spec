@@ -6,7 +6,7 @@ Summary:	%{_pearname} - single interface to the different XSLT interface or comm
 Summary(pl):	%{_pearname} - jeden interfejs do ró¿nych interfejsów i komend XSLT
 Name:		php-pear-%{_pearname}
 Version:	0.1
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -25,10 +25,24 @@ extension, XT command line
 command line
 (http://www.gingerall.com/charlie/ga/act/gadoc.act?pg=sablot#i__1940),
 XT java interface, xml.apache.org java and C interface
-(http://xml.apache.org), Instant Saxon
+(http://xml.apache.org/), Instant Saxon
 (http://users.iclway.co.uk/mhkay/saxon/instant.html). Batch mode: XML:
 multiple transformations of a single XML file, XSL: multiple
 transformations of multiple XML files using a single XSL.
+
+%description -l pl
+Ten pakiet zosta³ napisany, by zapewniæ prosty interfejs do
+wykonywania transformacji XSL przy u¿yciu ró¿nych bibliotek i poleceñ.
+Ma obs³ugê: rozszerzenia PHP DOM XSLT, rozszerzenia PHP XSLT, MSXML
+przy u¿yciu rozszerzenia PHP COM, linii poleceñ XT
+(http://www.blnz.com/xt/xt-20020426a-src/index.html), linii poleceñ
+Sablotrona
+(http://www.gingerall.com/charlie/ga/act/gadoc.act?pg=sablot#i__1940),
+interfejsu Javy XT, interfejsu Javy i C xml.apache.org
+(http://xml.apache.org/), Instant Saxon
+(http://users.iclway.co.uk/mhkay/saxon/instant.html). Tryb wsadowy dla
+XML: wiele transformacji jednego pliku XML; dla XSL: wiele
+transformacji wielu plików XML przy u¿yciu jednego XSL.
 
 %prep
 %setup -q -c
