@@ -1,0 +1,19 @@
+diff -u -r php-pear-XML_XSLT_Wrapper-0.1.org/XML_XSLT_Wrapper-0.1/XSLT_Wrapper.php php-pear-XML_XSLT_Wrapper-0.1/XML_XSLT_Wrapper-0.1/XSLT_Wrapper.php
+--- php-pear-XML_XSLT_Wrapper-0.1.org/XML_XSLT_Wrapper-0.1/XSLT_Wrapper.php	Fri Oct 11 18:24:32 2002
++++ php-pear-XML_XSLT_Wrapper-0.1/XML_XSLT_Wrapper-0.1/XSLT_Wrapper.php	Fri Oct 11 18:26:36 2002
+@@ -18,7 +18,7 @@
+ //
+ // $Id$
+ //
+-include_once '/usr/local/lib/php/PEAR.php';
++include_once 'PEAR.php';
+ /**
+  * Input modes constants
+  */
+@@ -787,4 +787,4 @@
+  * c-basic-offset: 4
+  * End:
+  */
+-?>
+\ No newline at end of file
++?> 
