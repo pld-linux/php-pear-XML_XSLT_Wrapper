@@ -5,12 +5,12 @@
 Summary:	%{_pearname} - single interface to the different XSLT interface or commands
 Summary(pl):	%{_pearname} - jeden interfejs do ró¿nych interfejsów i komend XSLT
 Name:		php-pear-%{_pearname}
-Version:	0.2
+Version:	0.1
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	3a841227cc9d43a6ec1f07044ebfc51b
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	14ccf38fcfbc607928e5180f392873f0
 URL:		http://pear.php.net/
 Patch0:		%{name}-pathfix.patch
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
