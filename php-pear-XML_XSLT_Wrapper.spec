@@ -32,7 +32,7 @@ XT java interface, xml.apache.org java and C interface
 multiple transformations of a single XML file, XSL: multiple
 transformations of multiple XML files using a single XSL.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Ten pakiet zosta³ napisany, by zapewniæ prosty interfejs do
