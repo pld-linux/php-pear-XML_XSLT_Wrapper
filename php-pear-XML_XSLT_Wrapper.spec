@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package was written to provide a simpler, cross-library and cross
 commands interface to doing XSL transformations. It provides support
-for: DOM XSLT php extension, XSLT php extension, MSXML using COM php
+for: DOM XSLT PHP extension, XSLT PHP extension, MSXML using COM PHP
 extension, XT command line
 (http://www.blnz.com/xt/xt-20020426a-src/index.html), Sablotron
 command line
