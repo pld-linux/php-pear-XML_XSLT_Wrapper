@@ -6,11 +6,12 @@ Summary:	%{_pearname} - single interface to the different XSLT interface or comm
 Summary(pl):	%{_pearname} - jeden interfejs do ró¿nych interfejsów i komend XSLT
 Name:		php-pear-%{_pearname}
 Version:	0.1
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/
+Patch0:		%{name}-pathfix.patch
 BuildRequires:	rpm-php-pearprov
 Requires:	php-pear
 BuildArch:	noarch
@@ -46,6 +47,7 @@ transformacji wielu plików XML przy u¿yciu jednego XSL.
 
 %prep
 %setup -q -c
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
