@@ -45,7 +45,7 @@ Sablotrona
 interfejsu Javy XT, interfejsu Javy i C xml.apache.org
 (http://xml.apache.org/), Instant Saxon
 (http://users.iclway.co.uk/mhkay/saxon/instant.html). Tryb wsadowy dla
-XML: wiele transformacji jednego pliku XML; dla XSL: wiele
+XML-a: wiele transformacji jednego pliku XML; dla XSL-a: wiele
 transformacji wielu plików XML przy u¿yciu jednego XSL.
 
 Ta klasa ma w PEAR status: %{_status}.
