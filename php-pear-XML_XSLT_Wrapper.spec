@@ -2,17 +2,17 @@
 %define         _class          XML
 %define         _subclass       XSLT
 %define		_pearname	%{_class}_%{_subclass}_Wrapper
+%define		_status		alpha
 Summary:	%{_pearname} - single interface to the different XSLT interface or commands
 Summary(pl):	%{_pearname} - jeden interfejs do ró¿nych interfejsów i komend XSLT
 Name:		php-pear-%{_pearname}
-Version:	0.1
+Version:	0.2.1
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	14ccf38fcfbc607928e5180f392873f0
+# Source0-md5:	a8d29c179ddbe62f1215bfcc7f9e95e5
 URL:		http://pear.php.net/
-Patch0:		%{name}-pathfix.patch
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
@@ -32,6 +32,8 @@ XT java interface, xml.apache.org java and C interface
 multiple transformations of a single XML file, XSL: multiple
 transformations of multiple XML files using a single XSL.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Ten pakiet zosta³ napisany, by zapewniæ prosty interfejs do
 wykonywania transformacji XSL przy u¿yciu ró¿nych bibliotek i poleceñ.
@@ -46,9 +48,10 @@ interfejsu Javy XT, interfejsu Javy i C xml.apache.org
 XML: wiele transformacji jednego pliku XML; dla XSL: wiele
 transformacji wielu plików XML przy u¿yciu jednego XSL.
 
+Ta klasa ma w PEAR status: %{_status}.
+
 %prep
 %setup -q -c
-%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
