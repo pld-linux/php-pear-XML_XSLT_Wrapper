@@ -7,13 +7,13 @@ Summary:	%{_pearname} - single interface to the different XSLT interface or comm
 Summary(pl):	%{_pearname} - jeden interfejs do ró¿nych interfejsów i komend XSLT
 Name:		php-pear-%{_pearname}
 Version:	0.2.1
-Release:	2
+Release:	2.1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	a8d29c179ddbe62f1215bfcc7f9e95e5
 URL:		http://pear.php.net/package/XML_XSLT_Wrapper/
-BuildRequires:	rpm-php-pearprov >= 4.0.2-98
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -51,26 +51,27 @@ transformacji wielu plików XML przy u¿yciu jednego XSL.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%pear_package_setup
+
+install -d docs/%{_pearname}/examples
+mv ./%{php_pear_dir}/data/%{_pearname}/examples/* docs/%{_pearname}/examples
+rmdir ./%{php_pear_dir}/data/%{_pearname}/examples
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Wrapper/Backend
-
-install %{_pearname}-%{version}/XSLT_Wrapper.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Wrapper.php
-install %{_pearname}-%{version}/Backend/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Wrapper/Backend
-
-# remove windows class:
-rm $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Wrapper/Backend/*Com.php
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/{TODO,examples/*}
+%doc install.log
+%doc docs/%{_pearname}/*
 %dir %{php_pear_dir}/%{_class}/%{_subclass}
 %dir %{php_pear_dir}/%{_class}/%{_subclass}/Wrapper
 %dir %{php_pear_dir}/%{_class}/%{_subclass}/Wrapper/Backend
+%{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/%{_subclass}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}/Wrapper/Backend/*.php
