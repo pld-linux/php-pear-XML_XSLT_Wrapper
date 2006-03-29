@@ -7,7 +7,7 @@ Summary:	%{_pearname} - single interface to the different XSLT interface or comm
 Summary(pl):	%{_pearname} - jeden interfejs do ró¿nych interfejsów i komend XSLT
 Name:		php-pear-%{_pearname}
 Version:	0.2.1
-Release:	3
+Release:	4
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
