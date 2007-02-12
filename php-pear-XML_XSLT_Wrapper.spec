@@ -4,7 +4,7 @@
 %define		_pearname	%{_class}_%{_subclass}_Wrapper
 
 Summary:	%{_pearname} - single interface to the different XSLT interface or commands
-Summary(pl.UTF-8):   %{_pearname} - jeden interfejs do różnych interfejsów i komend XSLT
+Summary(pl.UTF-8):	%{_pearname} - jeden interfejs do różnych interfejsów i komend XSLT
 Name:		php-pear-%{_pearname}
 Version:	0.2.1
 Release:	4
