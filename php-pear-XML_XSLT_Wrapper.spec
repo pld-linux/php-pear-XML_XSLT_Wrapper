@@ -4,7 +4,7 @@
 %define		_pearname	%{_class}_%{_subclass}_Wrapper
 
 Summary:	%{_pearname} - single interface to the different XSLT interface or commands
-Summary(pl):	%{_pearname} - jeden interfejs do ró¿nych interfejsów i komend XSLT
+Summary(pl.UTF-8):   %{_pearname} - jeden interfejs do rÃ³Å¼nych interfejsÃ³w i komend XSLT
 Name:		php-pear-%{_pearname}
 Version:	0.2.1
 Release:	4
@@ -36,19 +36,19 @@ transformations of multiple XML files using a single XSL.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten pakiet zosta³ napisany, by zapewniæ prosty interfejs do
-wykonywania transformacji XSL przy u¿yciu ró¿nych bibliotek i poleceñ.
-Ma obs³ugê: rozszerzenia PHP DOM XSLT, rozszerzenia PHP XSLT, MSXML
-przy u¿yciu rozszerzenia PHP COM, linii poleceñ XT
-(http://www.blnz.com/xt/xt-20020426a-src/index.html), linii poleceñ
+%description -l pl.UTF-8
+Ten pakiet zostaÅ‚ napisany, by zapewniÄ‡ prosty interfejs do
+wykonywania transformacji XSL przy uÅ¼yciu rÃ³Å¼nych bibliotek i poleceÅ„.
+Ma obsÅ‚ugÄ™: rozszerzenia PHP DOM XSLT, rozszerzenia PHP XSLT, MSXML
+przy uÅ¼yciu rozszerzenia PHP COM, linii poleceÅ„ XT
+(http://www.blnz.com/xt/xt-20020426a-src/index.html), linii poleceÅ„
 Sablotrona
 (http://www.gingerall.com/charlie/ga/act/gadoc.act?pg=sablot#i__1940),
 interfejsu Javy XT, interfejsu Javy i C xml.apache.org
 (http://xml.apache.org/), Instant Saxon
 (http://users.iclway.co.uk/mhkay/saxon/instant.html). Tryb wsadowy dla
 XML-a: wiele transformacji jednego pliku XML; dla XSL-a: wiele
-transformacji wielu plików XML przy u¿yciu jednego XSL.
+transformacji wielu plikÃ³w XML przy uÅ¼yciu jednego XSL.
 
 Ta klasa ma w PEAR status: %{_status}.
 
