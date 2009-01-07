@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - single interface to the different XSLT interface or commands
 Summary(pl.UTF-8):	%{_pearname} - jeden interfejs do różnych interfejsów i komend XSLT
 Name:		php-pear-%{_pearname}
-Version:	0.2.1
-Release:	5
+Version:	0.2.2
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	a8d29c179ddbe62f1215bfcc7f9e95e5
+# Source0-md5:	25e0ee88b56ea4eb87c709c5777b0d7a
 URL:		http://pear.php.net/package/XML_XSLT_Wrapper/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -54,10 +54,6 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %pear_package_setup
-
-install -d docs/%{_pearname}/examples
-mv ./%{php_pear_dir}/data/%{_pearname}/examples/* docs/%{_pearname}/examples
-rmdir ./%{php_pear_dir}/data/%{_pearname}/examples
 
 %install
 rm -rf $RPM_BUILD_ROOT
