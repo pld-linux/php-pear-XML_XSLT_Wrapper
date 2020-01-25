@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		XML
 %define		_subclass	XSLT
 %define		_pearname	%{_class}_%{_subclass}_Wrapper
